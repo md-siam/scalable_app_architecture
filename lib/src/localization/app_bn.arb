@@ -1,0 +1,5 @@
+{
+    "language": "বাংলা",
+    "helloWorld": "ওহে বিশ্ব!",
+    "hello": "ওহে {username}"
+}

@@ -1,16 +1,116 @@
-# scalable_app_architecture
+# Scalable App Architecture
 
 A new Flutter project.
 
-## Getting Started
+<b><h2> About the folder structure </h2></b>
 
-This project is a starting point for a Flutter application.
+<img align="left" src="screenshots/folder_structure.png"></img>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+    lib
+    ├── src
+    │   ├── common_widgets
+    │   │   └── common_button.dart
+    │   ├── constants
+    │   │   └── colors.dart
+    │   ├── exceptions
+    │   │   └── routing_exception.dart
+    │   ├── features
+    │   │   ├── address
+    │   │   │   ├── data
+    │   │   │   │   ├── datasources
+    │   │   │   │   │   └── address_datasources.dart
+    │   │   │   │   ├── models
+    │   │   │   │   └── repositories
+    │   │   │   ├── domain
+    │   │   │   │   ├── entities
+    │   │   │   │   ├── repositories
+    │   │   │   │   └── usecases
+    │   │   │   └── presentation
+    │   │   │       ├── bloc
+    │   │   │       │   ├── address_bloc.dart
+    │   │   │       │   ├── address_event.dart
+    │   │   │       │   └── address_state.dart
+    │   │   │       ├── pages
+    │   │   │       └── widgets
+    │   │   ├── cart
+    │   │   │   ├── data
+    │   │   │   │   ├── datasources
+    │   │   │   │   │   └── cart_datasources.dart
+    │   │   │   │   ├── models
+    │   │   │   │   └── repositories
+    │   │   │   ├── domain
+    │   │   │   │   ├── entities
+    │   │   │   │   ├── repositories
+    │   │   │   │   └── usecases
+    │   │   │   └── presentation
+    │   │   │       ├── bloc
+    │   │   │       │   ├── cart_bloc.dart
+    │   │   │       │   ├── cart_event.dart
+    │   │   │       │   └── cart_state.dart
+    │   │   │       ├── pages
+    │   │   │       └── widgets
+    │   │   ├── checkout
+    │   │   │   ├── data
+    │   │   │   │   ├── datasources
+    │   │   │   │   │   └── checkout_datasources.dart
+    │   │   │   │   ├── models
+    │   │   │   │   └── repositories
+    │   │   │   ├── domain
+    │   │   │   │   ├── entities
+    │   │   │   │   ├── repositories
+    │   │   │   │   └── usecases
+    │   │   │   └── presentation
+    │   │   │       ├── bloc
+    │   │   │       │   ├── checkout_bloc.dart
+    │   │   │       │   ├── checkout_event.dart
+    │   │   │       │   └── checkout_state.dart
+    │   │   │       ├── pages
+    │   │   │       └── widgets
+    │   │   ├── orders
+    │   │   │   ├── data
+    │   │   │   │   ├── datasources
+    │   │   │   │   │   └── orders_datasources.dart
+    │   │   │   │   ├── models
+    │   │   │   │   └── repositories
+    │   │   │   ├── domain
+    │   │   │   │   ├── entities
+    │   │   │   │   ├── repositories
+    │   │   │   │   └── usecases
+    │   │   │   └── presentation
+    │   │   │       ├── bloc
+    │   │   │       │   ├── orders_bloc.dart
+    │   │   │       │   ├── orders_event.dart
+    │   │   │       │   └── orders_state.dart
+    │   │   │       ├── pages
+    │   │   │       └── widgets
+    │   │   ├── products
+    │   │   │   ├── data
+    │   │   │   │   ├── datasources
+    │   │   │   │   │   └── product_datasources.dart
+    │   │   │   │   ├── models
+    │   │   │   │   └── repositories
+    │   │   │   ├── domain
+    │   │   │   │   ├── entities
+    │   │   │   │   ├── repositories
+    │   │   │   │   └── usecases
+    │   │   │   └── presentation
+    │   │   │       ├── bloc
+    │   │   │       │   ├── products_bloc.dart
+    │   │   │       │   ├── products_event.dart
+    │   │   │       │   └── products_state.dart
+    │   │   │       ├── pages
+    │   │   │       └── widgets
+    │   │   └── .DS_Store
+    │   ├── localization
+    │   │   ├── app_bn.arb
+    │   │   ├── app_en.arb
+    │   │   └── localization.dart
+    │   ├── routing
+    │   │   └── routing.dart
+    │   ├── utils
+    │   │   └── utils.dart
+    │   └── .DS_Store
+    ├── .DS_Store
+    └── main.dart
+```
