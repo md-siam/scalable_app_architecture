@@ -4,6 +4,8 @@ A new Flutter project.
 
 Source URL: https://codewithandrea.com/articles/flutter-project-structure/
 
+Feature developer: https://marketplace.visualstudio.com/items?itemName=KiritchoukC.flutter-clean-architecture
+
 <b><h2> About the folder structure </h2></b>
 
 <img align="left" src="screenshots/folder_structure.png"></img>
