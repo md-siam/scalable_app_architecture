@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+Source URL: https://codewithandrea.com/articles/flutter-project-structure/
+
 <b><h2> About the folder structure </h2></b>
 
 <img align="left" src="screenshots/folder_structure.png"></img>
