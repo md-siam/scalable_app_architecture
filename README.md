@@ -103,4 +103,20 @@ For any given feature, files that belong to different layers are far away from e
 
 And if we decide that we want to delete a feature, it's far too easy to forget certain files, because they are all organized by layer.
 
-For these reasons, the feature-first approach is often a better choice when building medium/large apps.
+For these reasons, the <b> feature-first </b> approach is often a better choice when building medium/large apps.
+
+<b><h2> What about shared code? </h2></b>
+
+Of course, when building real apps you'll find that your code doesn't always fit neatly into specific folders as you intended.
+
+What if two or more separate features need to share some widgets or model classes?
+
+In these cases, it's easy to end up with folders called `shared` or `common`, or `utils`.
+
+But how should these folders themselves be organized? And how do you prevent them from becoming a dumping ground for all sorts of files?
+
+If your app has 20 features and has some code that needs to be shared by only two of them, should it really belong to a top-level `shared` folder?
+
+What if it's shared among 5 features? Or 10?
+
+In this scenario, there is no right or wrong answer, and you have to use your best judgement on a case-by-case basis.
