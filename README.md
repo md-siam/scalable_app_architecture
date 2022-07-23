@@ -6,7 +6,7 @@
 
 # Scalable App Architecture
 
-<img align="right" src="screenshots/store_icons/playstore.png" height="160"></img>
+<img align="right" src="screenshots/store_icons/playstore.png" height="180"></img>
 
 Inspired by the clean architecture design by [Andrea Bizzotto](https://github.com/bizz84). Full documentation of this design can be found [here](https://codewithandrea.com/articles/flutter-project-structure/). In addition to that, I am using VSCode extension called [Flutter Feature Scaffolding](https://marketplace.visualstudio.com/items?itemName=KiritchoukC.flutter-clean-architecture) for easily generating the features' folders. This design is using BLoC state-management solution, and for more information on BLoC library, I would strongly suggest you to follow their official [documentation](https://bloclibrary.dev).
 
