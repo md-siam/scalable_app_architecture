@@ -6,9 +6,9 @@
 
 # Scalable App Architecture
 
-<img align="right" src="screenshots/store_icons/playstore.png" height="180"></img>
+<img align="right" src="screenshots/store_icons/playstore.png" height="200"></img>
 
-Inspired by the clean architecture design by [Andrea Bizzotto](https://github.com/bizz84). Full documentation of this design can be found [here](https://codewithandrea.com/articles/flutter-project-structure/). In addition to that, I am using VSCode extension called [Flutter Feature Scaffolding](https://marketplace.visualstudio.com/items?itemName=KiritchoukC.flutter-clean-architecture) for easily generating the features' folders. This design is using BLoC state-management solution, and for more information on BLoC library, I would strongly suggest you to follow their official [documentation](https://bloclibrary.dev).
+This scalable app architecture design is inspired by [Andrea Bizzotto](https://github.com/bizz84). Full documentation of this design can be found [here](https://codewithandrea.com/articles/flutter-project-structure/). In addition to that, you can use a VSCode extension called [Flutter Feature Scaffolding](https://marketplace.visualstudio.com/items?itemName=KiritchoukC.flutter-clean-architecture) for easily generating the features' folders. This design is using BLoC state-management solution, and for more information on BLoC library, I would strongly suggest you to follow their official [documentation](https://bloclibrary.dev).
 
 This project contains everything that you will need in order to immediately start developing your highly scaled application. You can also call this folder structure as <b> Feature-first (layers inside features) </b> design.
 
