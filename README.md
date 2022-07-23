@@ -130,11 +130,11 @@ In this scenario, there is no right or wrong answer, and you have to use your be
 Feature is not about what the user <b>sees</b>, but what the user <b>does</b>:
 
 ```
-   ➮ authenticate
-   ➮ manage the shopping cart
-   ➮ checkout
-   ➮ view all past orders
-   ➮ leave a review
+➮ authenticate
+➮ manage the shopping cart
+➮ checkout
+➮ view all past orders
+➮ leave a review
 ```
 
 In other words, a feature is a <b>functional requirement</b> that helps the user <b>complete a given task</b>.
@@ -146,9 +146,9 @@ Once I figured that out, everything fell into place. And I ended up with seven f
 Note that with this approach is still possible for code inside a given feature to depend on code from a different feature. For example:
 
 ```
-the product page shows a list of reviews
-the orders page shows some product information
-the checkout flow requires the user to authenticate first
+➮ the product page shows a list of reviews
+➮ the orders page shows some product information
+➮ the checkout flow requires the user to authenticate first
 ```
 
 But we end up with far fewer files that are shared <b>across all features</b>, and the entire structure is much more <b>balanced</b>.
