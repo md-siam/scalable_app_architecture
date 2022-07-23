@@ -141,4 +141,25 @@ In other words, a feature is a <b>functional requirement</b> that helps the user
 
 And using some hints from <b>domain-driven design</b>, I decided to organize the project structure around the domain layer.
 
-Once I figured that out, everything fell into place. And I ended up with seven functional areas:
+Once I figured that out, everything fell into place. And I ended up with seven functional areas that you can see on the right.
+
+Note that with this approach is still possible for code inside a given feature to depend on code from a different feature. For example:
+
+```
+the product page shows a list of reviews
+the orders page shows some product information
+the checkout flow requires the user to authenticate first
+```
+
+But we end up with far fewer files that are shared <b>across all features</b>, and the entire structure is much more <b>balanced</b>.
+
+## How to do `feature-first`, the right way?
+
+In summary, the feature-first approach lets us structure our project around the <b>functional requirements</b> of our app.
+
+So here's how to use this correctly in your own apps:
+
+☞ start from the domain layer and identify the model classes and business logic for manipulating them<br>
+☞ create a folder for each model (or group of models) that belong together<br>
+☞ within that folder, create the `presentation`, `application`, `domain`, `data` sub-folders as needed<br>
+☞ inside each sub-folder, add all the files you need<br>
