@@ -19,107 +19,165 @@ Feature developer: https://marketplace.visualstudio.com/items?itemName=Kiritchou
 <img align="left" src="screenshots/folder_structure.png"></img>
 
 ```
-    lib
-    ├── src
-    │   ├── common_widgets
+    lib/
+    ├── src/
+    │   ├── common_widgets/
     │   │   └── common_button.dart
-    │   ├── constants
+    │   ├── constants/
     │   │   └── colors.dart
-    │   ├── exceptions
+    │   ├── exceptions/
     │   │   └── routing_exception.dart
-    │   ├── features
-    │   │   ├── address
-    │   │   │   ├── data
-    │   │   │   │   ├── datasources
+    │   ├── features/
+    │   │   ├── address/
+    │   │   │   ├── data/
+    │   │   │   │   ├── datasources/
     │   │   │   │   │   └── address_datasources.dart
-    │   │   │   │   ├── models
-    │   │   │   │   └── repositories
-    │   │   │   ├── domain
-    │   │   │   │   ├── entities
-    │   │   │   │   ├── repositories
-    │   │   │   │   └── usecases
-    │   │   │   └── presentation
-    │   │   │       ├── bloc
+    │   │   │   │   ├── models/
+    │   │   │   │   │   └── address_model.dart
+    │   │   │   │   └── repositories/
+    │   │   │   │       └── address_repositories.dart
+    │   │   │   ├── domain/
+    │   │   │   │   ├── entities/
+    │   │   │   │   │   └── address_entities.dart
+    │   │   │   │   ├── repositories/
+    │   │   │   │   │   └── address_repositories.dart
+    │   │   │   │   └── usecases/
+    │   │   │   │       └── address_usecases.dart
+    │   │   │   └── presentation/
+    │   │   │       ├── bloc/
     │   │   │       │   ├── address_bloc.dart
     │   │   │       │   ├── address_event.dart
     │   │   │       │   └── address_state.dart
-    │   │   │       ├── pages
-    │   │   │       └── widgets
-    │   │   ├── cart
-    │   │   │   ├── data
-    │   │   │   │   ├── datasources
+    │   │   │       ├── pages/
+    │   │   │       │   └── address_page.dart
+    │   │   │       └── widgets/
+    │   │   │           └── address_widgets.dart
+    │   │   ├── authentication/
+    │   │   │   ├── data/
+    │   │   │   │   ├── datasources/
+    │   │   │   │   │   └── authentication_datasources.dart
+    │   │   │   │   ├── models/
+    │   │   │   │   │   └── authentication_model.dart
+    │   │   │   │   └── repositories/
+    │   │   │   │       └── authentication_repositories.dart
+    │   │   │   ├── domain/
+    │   │   │   │   ├── entities/
+    │   │   │   │   │   └── authentication_entities.dart
+    │   │   │   │   ├── repositories/
+    │   │   │   │   │   └── authentication_repositories.dart
+    │   │   │   │   └── usecases/
+    │   │   │   │       └── authentication_usecases.dart
+    │   │   │   └── presentation/
+    │   │   │       ├── cubit/
+    │   │   │       │   ├── authentication_cubit.dart
+    │   │   │       │   └── authentication_state.dart
+    │   │   │       ├── pages/
+    │   │   │       │   └── authentication_page.dart
+    │   │   │       └── widgets/
+    │   │   │           └── authentication_widgets.dart
+    │   │   ├── cart/
+    │   │   │   ├── data/
+    │   │   │   │   ├── datasources/
     │   │   │   │   │   └── cart_datasources.dart
-    │   │   │   │   ├── models
-    │   │   │   │   └── repositories
-    │   │   │   ├── domain
-    │   │   │   │   ├── entities
-    │   │   │   │   ├── repositories
-    │   │   │   │   └── usecases
-    │   │   │   └── presentation
-    │   │   │       ├── bloc
+    │   │   │   │   ├── models/
+    │   │   │   │   │   └── cart_model.dart
+    │   │   │   │   └── repositories/
+    │   │   │   │       └── cart_repositories.dart
+    │   │   │   ├── domain/
+    │   │   │   │   ├── entities/
+    │   │   │   │   │   └── cart_entities.dart
+    │   │   │   │   ├── repositories/
+    │   │   │   │   │   └── cart_repositories.dart
+    │   │   │   │   └── usecases/
+    │   │   │   │       └── cart_usecases.dart
+    │   │   │   └── presentation/
+    │   │   │       ├── bloc/
     │   │   │       │   ├── cart_bloc.dart
     │   │   │       │   ├── cart_event.dart
     │   │   │       │   └── cart_state.dart
-    │   │   │       ├── pages
-    │   │   │       └── widgets
-    │   │   ├── checkout
-    │   │   │   ├── data
-    │   │   │   │   ├── datasources
+    │   │   │       ├── pages/
+    │   │   │       │   └── cart_page.dart
+    │   │   │       └── widgets/
+    │   │   │           └── cart_widgets.dart
+    │   │   ├── checkout/
+    │   │   │   ├── data/
+    │   │   │   │   ├── datasources/
     │   │   │   │   │   └── checkout_datasources.dart
-    │   │   │   │   ├── models
-    │   │   │   │   └── repositories
-    │   │   │   ├── domain
-    │   │   │   │   ├── entities
-    │   │   │   │   ├── repositories
-    │   │   │   │   └── usecases
-    │   │   │   └── presentation
-    │   │   │       ├── bloc
+    │   │   │   │   ├── models/
+    │   │   │   │   │   └── checkout_model.dart
+    │   │   │   │   └── repositories/
+    │   │   │   │       └── checkout_repositories.dart
+    │   │   │   ├── domain/
+    │   │   │   │   ├── entities/
+    │   │   │   │   │   └── checkout_entities.dart
+    │   │   │   │   ├── repositories/
+    │   │   │   │   │   └── checkout_repositories.dart
+    │   │   │   │   └── usecases/
+    │   │   │   │       └── checkout_usecases.dart
+    │   │   │   └── presentation/
+    │   │   │       ├── bloc/
     │   │   │       │   ├── checkout_bloc.dart
     │   │   │       │   ├── checkout_event.dart
     │   │   │       │   └── checkout_state.dart
-    │   │   │       ├── pages
-    │   │   │       └── widgets
-    │   │   ├── orders
-    │   │   │   ├── data
-    │   │   │   │   ├── datasources
+    │   │   │       ├── pages/
+    │   │   │       │   └── checkout_page.dart
+    │   │   │       └── widgets/
+    │   │   │           └── checkout_widgets.dart
+    │   │   ├── orders/
+    │   │   │   ├── data/
+    │   │   │   │   ├── datasources/
     │   │   │   │   │   └── orders_datasources.dart
-    │   │   │   │   ├── models
-    │   │   │   │   └── repositories
-    │   │   │   ├── domain
-    │   │   │   │   ├── entities
-    │   │   │   │   ├── repositories
-    │   │   │   │   └── usecases
-    │   │   │   └── presentation
-    │   │   │       ├── bloc
+    │   │   │   │   ├── models/
+    │   │   │   │   │   └── orders_model.dart
+    │   │   │   │   └── repositories/
+    │   │   │   │       └── orders_repositories.dart
+    │   │   │   ├── domain/
+    │   │   │   │   ├── entities/
+    │   │   │   │   │   └── orders_entities.dart
+    │   │   │   │   ├── repositories/
+    │   │   │   │   │   └── orders_repositories.dart
+    │   │   │   │   └── usecases/
+    │   │   │   │       └── orders_usecases.dart
+    │   │   │   └── presentation/
+    │   │   │       ├── bloc/
     │   │   │       │   ├── orders_bloc.dart
     │   │   │       │   ├── orders_event.dart
     │   │   │       │   └── orders_state.dart
-    │   │   │       ├── pages
-    │   │   │       └── widgets
-    │   │   └── products
-    │   │       ├── data
-    │   │       │   ├── datasources
+    │   │   │       ├── pages/
+    │   │   │       │   └── orders_page.dart
+    │   │   │       └── widgets/
+    │   │   │           └── orders_widgets.dart
+    │   │   └── products/
+    │   │       ├── data/
+    │   │       │   ├── datasources/
     │   │       │   │   └── product_datasources.dart
-    │   │       │   ├── models
-    │   │       │   └── repositories
-    │   │       ├── domain
-    │   │       │   ├── entities
-    │   │       │   ├── repositories
-    │   │       │   └── usecases
-    │   │       └── presentation
-    │   │           ├── bloc
+    │   │       │   ├── models/
+    │   │       │   │   └── products_model.dart
+    │   │       │   └── repositories/
+    │   │       │       └── products_repositories.dart
+    │   │       ├── domain/
+    │   │       │   ├── entities/
+    │   │       │   │   └── products_entities.dart
+    │   │       │   ├── repositories/
+    │   │       │   │   └── products_repositories.dart
+    │   │       │   └── usecases/
+    │   │       │       └── products_usecases.dart
+    │   │       └── presentation/
+    │   │           ├── bloc/
     │   │           │   ├── products_bloc.dart
     │   │           │   ├── products_event.dart
     │   │           │   └── products_state.dart
-    │   │           ├── pages
-    │   │           └── widgets
-    │   ├── localization
+    │   │           ├── pages/
+    │   │           │   └── products_page.dart
+    │   │           └── widgets/
+    │   │               └── products_widgets.dart
+    │   ├── localization/
     │   │   ├── app_bn.arb
     │   │   ├── app_en.arb
     │   │   └── localization.dart
-    │   ├── routing
+    │   ├── routing/
     │   │   └── routing.dart
-    │   └── utils
+    │   └── utils/
     │       └── utils.dart
     └── main.dart
 ```
