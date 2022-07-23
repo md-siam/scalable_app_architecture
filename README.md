@@ -6,7 +6,7 @@
 
 # Scalable App Architecture
 
-<!-- <img align="right" src="screenshots/store_icons/playstore.png" height="160"></img> -->
+<img align="right" src="screenshots/store_icons/playstore.png" height="160"></img>
 
 A new Flutter project.
 
@@ -96,33 +96,30 @@ Feature developer: https://marketplace.visualstudio.com/items?itemName=Kiritchou
     │   │   │       │   └── orders_state.dart
     │   │   │       ├── pages
     │   │   │       └── widgets
-    │   │   ├── products
-    │   │   │   ├── data
-    │   │   │   │   ├── datasources
-    │   │   │   │   │   └── product_datasources.dart
-    │   │   │   │   ├── models
-    │   │   │   │   └── repositories
-    │   │   │   ├── domain
-    │   │   │   │   ├── entities
-    │   │   │   │   ├── repositories
-    │   │   │   │   └── usecases
-    │   │   │   └── presentation
-    │   │   │       ├── bloc
-    │   │   │       │   ├── products_bloc.dart
-    │   │   │       │   ├── products_event.dart
-    │   │   │       │   └── products_state.dart
-    │   │   │       ├── pages
-    │   │   │       └── widgets
-    │   │   └── .DS_Store
+    │   │   └── products
+    │   │       ├── data
+    │   │       │   ├── datasources
+    │   │       │   │   └── product_datasources.dart
+    │   │       │   ├── models
+    │   │       │   └── repositories
+    │   │       ├── domain
+    │   │       │   ├── entities
+    │   │       │   ├── repositories
+    │   │       │   └── usecases
+    │   │       └── presentation
+    │   │           ├── bloc
+    │   │           │   ├── products_bloc.dart
+    │   │           │   ├── products_event.dart
+    │   │           │   └── products_state.dart
+    │   │           ├── pages
+    │   │           └── widgets
     │   ├── localization
     │   │   ├── app_bn.arb
     │   │   ├── app_en.arb
     │   │   └── localization.dart
     │   ├── routing
     │   │   └── routing.dart
-    │   ├── utils
-    │   │   └── utils.dart
-    │   └── .DS_Store
-    ├── .DS_Store
+    │   └── utils
+    │       └── utils.dart
     └── main.dart
 ```
