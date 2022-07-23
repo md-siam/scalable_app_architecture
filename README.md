@@ -123,7 +123,7 @@ In this scenario, there is no right or wrong answer, and you have to use your be
 
 ## What is a `feature`?
 
-<img align="right" src="screenshots/sample_design.png"></img>
+<img align="right" src="screenshots/sample_design2.png"></img>
 
 `Feature-first is not about the UI!`
 
