@@ -8,13 +8,7 @@
 
 <img align="right" src="screenshots/store_icons/playstore.png" height="160"></img>
 
-This repository imitate the starting project structure for every flutter applications that I have developed using the <b> BLoC </b> package. I am following the official [documentation](https://bloclibrary.dev/#/architecture) of this BLoC package for designing the folder structure. For more information on BLoC library I would strongly suggest you to follow their official [documentation](https://bloclibrary.dev).
-
-Source URL: https://codewithandrea.com/articles/flutter-project-structure/
-
-Feature developer: https://marketplace.visualstudio.com/items?itemName=KiritchoukC.flutter-clean-architecture
-
-
+Inspired by the clean architecture design by [Andrea Bizzotto](https://github.com/bizz84). Full documentation of this design can be found [here](https://codewithandrea.com/articles/flutter-project-structure/). In addition to that, I am using VSCode extension called [Flutter Feature Scaffolding](https://marketplace.visualstudio.com/items?itemName=KiritchoukC.flutter-clean-architecture) for easily generating the features' folders. This design is using BLoC state-management solution, and for more information on BLoC library, I would strongly suggest you to follow their official [documentation](https://bloclibrary.dev).
 
 This project contains everything that you will need in order to immediately start developing your highly scaled application. You can also call this folder structure as <b> Feature-first (layers inside features) </b> design.
 
@@ -80,3 +74,32 @@ This project contains everything that you will need in order to immediately star
 You might notice that some files are just dummy (like api.dart, model.dart).
 They are placed there just for git to take the folder structure into consideration.
 Leaving those folders empty won't let git to take them into consideration. Since this is mostly a startup project, I was thinking of offering you the standard folder structure from the start. Of course, this may change multiple times, improving every time more and more.
+
+## Why this design pattern?
+
+<img align="right" src="screenshots/layers_design.png" width="350" ></img>
+
+This architecture is made of four distinct layers, each containing the components that our app needs: <br>
+
+```
+➮ presentation: widgets, states, and controllers
+➮ application: services
+➮ domain: models
+➮ data: repositories, data sources, and DTOs (data transfer objects)
+```
+
+Of course, if we're building just a single-page app, we can put all files in one folder and call it a day. 😎
+
+But as soon as we start adding more pages and have various data models to deal with, how can we organize all our files in a consistent way?
+
+In practice, a <b> feature-first </b> or <b> layer-first </b> approach is often used.
+
+<b><h2> Layer-first: Drawbacks </h2></b>
+
+This approach is easy to use in practice, but <b> doesn't scale very well </b> as the app grows.
+
+For any given feature, files that belong to different layers are far away from each other. And this makes it harder to work on individual features because we have to keep jumping to different parts of the project.
+
+And if we decide that we want to delete a feature, it's far too easy to forget certain files, because they are all organized by layer.
+
+For these reasons, the feature-first approach is often a better choice when building medium/large apps.
