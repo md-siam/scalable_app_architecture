@@ -8,11 +8,15 @@
 
 <img align="right" src="screenshots/store_icons/playstore.png" height="160"></img>
 
-A new Flutter project.
+This repository imitate the starting project structure for every flutter applications that I have developed using the <b> BLoC </b> package. I am following the official [documentation](https://bloclibrary.dev/#/architecture) of this BLoC package for designing the folder structure. For more information on BLoC library I would strongly suggest you to follow their official [documentation](https://bloclibrary.dev).
 
 Source URL: https://codewithandrea.com/articles/flutter-project-structure/
 
 Feature developer: https://marketplace.visualstudio.com/items?itemName=KiritchoukC.flutter-clean-architecture
+
+
+
+This project contains everything that you will need in order to immediately start developing your highly scaled application. You can also call this folder structure as <b> Feature-first (layers inside features) </b> design.
 
 <b><h2> About the folder structure </h2></b>
 
