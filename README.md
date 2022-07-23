@@ -85,7 +85,8 @@ This architecture is made of four distinct layers, each containing the component
 ➮ presentation: widgets, states, and controllers
 ➮ application: services
 ➮ domain: models
-➮ data: repositories, data sources, and DTOs (data transfer objects)
+➮ data: repositories, data sources,
+        and DTOs (data transfer objects)
 ```
 
 Of course, if we're building just a single-page app, we can put all files in one folder and call it a day. 😎
