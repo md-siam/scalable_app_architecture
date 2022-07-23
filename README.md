@@ -120,3 +120,25 @@ If your app has 20 features and has some code that needs to be shared by only tw
 What if it's shared among 5 features? Or 10?
 
 In this scenario, there is no right or wrong answer, and you have to use your best judgement on a case-by-case basis.
+
+## What is a `feature`?
+
+<img align="right" src="screenshots/sample_design.png"></img>
+
+`Feature-first is not about the UI!`
+
+Feature is not about what the user <b>sees</b>, but what the user <b>does</b>:
+
+```
+   ➮ authenticate
+   ➮ manage the shopping cart
+   ➮ checkout
+   ➮ view all past orders
+   ➮ leave a review
+```
+
+In other words, a feature is a <b>functional requirement</b> that helps the user <b>complete a given task</b>.
+
+And using some hints from <b>domain-driven design</b>, I decided to organize the project structure around the domain layer.
+
+Once I figured that out, everything fell into place. And I ended up with seven functional areas:
